@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css" />
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+    <script src="glueJs.js"></script>
 <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>-->
     <style>
@@ -172,6 +173,9 @@
         };
         app.prototype = {
             page: null,
+//            pageObj: [
+//              'page-home': new pageHome() // maybe we could just base it on the name...
+//            ]
             init: function () { 
               var me = this;
               me._initLayout();
@@ -192,9 +196,109 @@
               me.page = $(location.hash.length > 1 ? location.hash : '#'+$('.page-default').attr('id'));
               me.page.fadeIn('slow');
               $('header .brand-logo').text(me.page.attr('title'));              
+            },
+            loadData: function(data) {
+              var me = this;
+              return me;
+            }
+        };
+        var pageHome = function () {
+            this.init();
+        };
+        pageHome.prototype = {
+            init: function () { 
+              var me = this;
+              me._initLayout();
+              me._initEvent();
+            },
+            _initLayout: function() {
+              var me = this;
+            },
+            _initEvent: function() {
+              var me = this;
+            },
+            render: function() {
+              var me = this;
+              return me;
             }
         };
         $.app = new app();
+        $.app.loadData(
+'{
+    "status": [
+        {
+            "name": "Home"
+        },
+        {
+            "name": "Secure"
+        },
+        {
+            "name": "Secure + back soon"
+        }
+    ],
+    "zones": [
+        {
+            "name": "Living room",
+            "status": [
+                {
+                    "name": "Default"
+                },
+                {
+                    "name": "Chill"
+                },
+                {
+                    "name": "Work"
+                },
+                {
+                    "name": "Away"
+                },
+                {
+                    "name": "Secure"
+                }
+            ]
+        },
+        {
+            "name": "Kitchen",
+            "status": [
+                {
+                    "name": "Default"
+                },
+                {
+                    "name": "Cooking on stove"
+                },
+                {
+                    "name": "Away"
+                },
+                {
+                    "name": "Secure"
+                }
+            ]
+        },
+        {
+            "name": "Sleeping room",
+            "status": [
+                {
+                    "name": "Default"
+                },
+                {
+                    "name": "Secure"
+                }
+            ]
+        },
+        {
+            "name": "Bathroom",
+            "status": [
+                {
+                    "name": "Default"
+                },
+                {
+                    "name": "Secure"
+                }
+            ]
+        }
+    ]
+}'
+        );
       });
     </script>
   </body>
