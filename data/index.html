@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css" />
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>-->
     <style>
       header, main, footer {
         padding-left: 240px;
@@ -50,6 +50,7 @@
     <ul id="slide-out" class="side-nav fixed">
       <li class="logo"><a href="#" class="red-text text-lighten-2">domomcu</a></li>
       <li><a href="#page-home"><b>Home</b></a></li>
+      <li><a href="#page-status"><b>Status</b></a></li>
       <li><a href="#page-settings"><b>Settings</b></a></li>
     </ul>
     
@@ -64,82 +65,94 @@
       </nav>      
     </header>
     
-    <main>
-      <div class="container">
-        
-        <div id="page-home" class="page-default">
-          <div class="collection">
-            <a href="#!" class="collection-item">Home</a>
-            <a href="#!" class="collection-item active">Secure</a>
-            <a href="#!" class="collection-item">Secure + back soon</a>
-          </div>
+    <div id="page-home" class="page-default" title="Home">
+      <main>
+        <div class="container">
+            <div class="collection">
+              <a href="#!" class="collection-item">Home</a>
+              <a href="#!" class="collection-item active">Secure</a>
+              <a href="#!" class="collection-item">Secure + back soon</a>
+            </div>
 
-          <div>
-            <div class="inline-block-2">
-              <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                  <span class="card-title">Living room</span>
-                  <div class="collection">
-                    <a href="#!" class="collection-item blue-grey darken-2">Default</a>
-                    <a href="#!" class="collection-item blue-grey darken-2 active">Chill</a>
-                    <a href="#!" class="collection-item blue-grey darken-2">Work</a>
-                    <a href="#!" class="collection-item blue-grey darken-2">Away</a>
-                    <a href="#!" class="collection-item blue-grey darken-2">Secure</a>
+            <div>
+              <div class="inline-block-2">
+                <div class="card blue-grey darken-1">
+                  <div class="card-content white-text">
+                    <span class="card-title">Living room</span>
+                    <div class="collection">
+                      <a href="#!" class="collection-item blue-grey darken-2">Default</a>
+                      <a href="#!" class="collection-item blue-grey darken-2 active">Chill</a>
+                      <a href="#!" class="collection-item blue-grey darken-2">Work</a>
+                      <a href="#!" class="collection-item blue-grey darken-2">Away</a>
+                      <a href="#!" class="collection-item blue-grey darken-2">Secure</a>
+                    </div>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Devices</a>
+                    <a href="#">Settings</a>
                   </div>
                 </div>
-                <div class="card-action">
-                  <a href="#">Devices</a>
-                  <a href="#">Settings</a>
-                </div>
               </div>
-            </div>
-            <div class="inline-block-2">
-              <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                  <span class="card-title">Kitchen</span>
-                  <div class="collection">
-                    <a href="#!" class="collection-item blue-grey darken-2">Default</a>
-                    <a href="#!" class="collection-item blue-grey darken-2 active">Cooking on stove</a>
-                    <a href="#!" class="collection-item blue-grey darken-2">Away</a>
-                    <a href="#!" class="collection-item blue-grey darken-2">Secure</a>
+              <div class="inline-block-2">
+                <div class="card blue-grey darken-1">
+                  <div class="card-content white-text">
+                    <span class="card-title">Kitchen</span>
+                    <div class="collection">
+                      <a href="#!" class="collection-item blue-grey darken-2">Default</a>
+                      <a href="#!" class="collection-item blue-grey darken-2 active">Cooking on stove</a>
+                      <a href="#!" class="collection-item blue-grey darken-2">Away</a>
+                      <a href="#!" class="collection-item blue-grey darken-2">Secure</a>
+                    </div>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Devices</a>
+                    <a href="#">Settings</a>
                   </div>
                 </div>
-                <div class="card-action">
-                  <a href="#">Devices</a>
-                  <a href="#">Settings</a>
+              </div>
+              <div class="inline-block-2">
+                <div class="card blue-grey darken-1">
+                  <div class="card-content white-text">
+                    <span class="card-title">Sleeping room</span>
+                    <p>Some settings when I will be back soon home</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Devices</a>
+                    <a href="#">Settings</a>
+                  </div>
+                </div>
+              </div>
+              <div class="inline-block-2">
+                <div class="card blue-grey darken-1">
+                  <div class="card-content white-text">
+                    <span class="card-title">Bathroom</span>
+                    <p>Some settings when I will be back soon home</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Devices</a>
+                    <a href="#">Settings</a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="inline-block-2">
-              <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                  <span class="card-title">Sleeping room</span>
-                  <p>Some settings when I will be back soon home</p>
-                </div>
-                <div class="card-action">
-                  <a href="#">Devices</a>
-                  <a href="#">Settings</a>
-                </div>
-              </div>
-            </div>
-            <div class="inline-block-2">
-              <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                  <span class="card-title">Bathroom</span>
-                  <p>Some settings when I will be back soon home</p>
-                </div>
-                <div class="card-action">
-                  <a href="#">Devices</a>
-                  <a href="#">Settings</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
         </div>
-                
-      </div>
-    </main>
+      </main>
+    </div>
+
+    <div id="page-devices" title="Devices">
+      <main>
+        <div class="container">
+        </div>
+      </main>
+    </div>
+    
+    <div id="page-status" title="Status">
+      <main>
+        <div class="container">
+        </div>
+      </main>
+    </div>
+
     
     <footer class="page-footer">
       <div class="container white-text">
@@ -153,12 +166,35 @@
     </footer>
     
     <script>
-      $(function() {
-        $(".button-collapse").sideNav();
-        $(window).on('hashchange', function() {
-          $('div[id^="page-"]').hide();
-          $(location.hash.length > 1 ? location.hash : '#'+$('.page-default').attr('id')).fadeIn('slow');
-        }).trigger('hashchange');
+      $(function() {        
+        var app = function () {
+            this.init();
+        };
+        app.prototype = {
+            page: null,
+            init: function () { 
+              var me = this;
+              me._initLayout();
+              me._initEvent();
+            },
+            _initLayout: function() {
+              var me = this;
+              $(".button-collapse").sideNav();
+            },
+            _initEvent: function() {
+              var me = this;
+              $(window).on('hashchange', function() { me._evHashChange(); }).trigger('hashchange');
+            },
+            _evHashChange: function() {
+              var me = this;
+              $('div[id^="page-"]').hide();
+              console.log(location.hash);
+              me.page = $(location.hash.length > 1 ? location.hash : '#'+$('.page-default').attr('id'));
+              me.page.fadeIn('slow');
+              $('header .brand-logo').text(me.page.attr('title'));              
+            }
+        };
+        $.app = new app();
       });
     </script>
   </body>
